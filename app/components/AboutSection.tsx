@@ -4,17 +4,13 @@ import Image from "next/image";
 import TabButton from "./TabButton";
 const TAB_DATA = [
   {
-    title: "Skills",
-    id: "skills",
+    title: "Career",
+    id: "Career",
     content: (
-      <ul className="list-disc pl-2 grid grid-cols-4 gap-4">
-        <li>Java</li>
-        <li>Arduino</li>
-        <li>Python</li>
-        <li>Elecronics</li>
-        <li>Robotics</li>
-        <li>Boxing</li>
-      </ul>
+      <ul className="list-disc pl-2"> 
+        <li>Major in Computer Science</li>
+        <li>Minor in Electrical Engineering</li>
+        <li className="text-red-500">How was my RA experience connected to my career goals?</li>      </ul>
       
     ),
   },
@@ -23,24 +19,15 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>High School Graduate - Universidad Tecmilenio</li>
-        <li>Bachelor&apos;s Computer Science - University of Texas Rio Grande Valley</li>
-      </ul>
-    ),
-  },
-  {
-    title: "Certifications",
-    id: "certifications",
-    content: (
-      <ul className="list-disc pl-2">
-        <li>Add Later</li>
+        <li className="text-red-500">What have I learned?</li>
+        <li className="text-red-500">And how have I incorporated it?</li>
       </ul>
     ),
   },
 ];
 
 const AboutSection = () => {
-  const [tab, setTab] = useState("skills");
+  const [tab, setTab] = useState("Career");
   const [isPending, startTransition] = useTransition();
 
   const handleTabChange = (id: any) => {
@@ -49,41 +36,47 @@ const AboutSection = () => {
     });
   };
 
-  return (
-    <section className="text-white" id="about">
+  return ( // ' you have write &apos
+    <section className="text-white" id="about">  
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image src="/images/IMG_4905.png" width={500} height={500} alt="" />
+        <video
+          width={600}
+          height={600}
+          autoPlay
+          loop
+          muted
+          playsInline
+        >
+          <source src="/images/IMG_3192.MOV" type="video/mp4" />
+        </video>
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
-          <p className="text-base lg:text-lg">
-          Hi, my name is Edgar Bello, and I&apos;m currently a freshman majoring in computer science.
-          I have a deep passion for robotics and am excited to dive deeper into this field during my time in college.
-          I&apos;m eager to learn more about both the theoretical and practical aspects of robotics, 
-          from coding and algorithms to hands-on building and innovation. 
-          I&apos;m looking forward to expanding my skills, 
-          collaborating with others, and exploring the endless possibilities that technology offers.   
+          <p className="text-base lg:text-lg">    
+         First RA Semester: Fall 2025 
+         <br />
+         Portfolio Semester: Spring 2026
+         <br />
+         Hall: Unity Hall
+         <br />
+         GPA: 3.73
+         <br />
+         Expected Graduation Date: Spring 2028
+
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
-              selectTab={() => handleTabChange("skills")}
-              active={tab === "skills"}
+              selectTab={() => handleTabChange("Career")}
+              active={tab === "Career"}
             >
               {" "}
-              Skills{" "}
+              Career{" "}
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange("education")}
               active={tab === "education"}
             >
               {" "}
-              Education{" "}
-            </TabButton>
-            <TabButton
-              selectTab={() => handleTabChange("certifications")}
-              active={tab === "certifications"}
-            >
-              {" "}
-              Certifications{" "}
+              Feedback{" "}
             </TabButton>
           </div>
           <div className="mt-8 ">
