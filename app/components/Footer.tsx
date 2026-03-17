@@ -11,4 +11,6 @@ const Footer = () => {
   );
 };
 
+//This is a comment
+
 export default Footer;
