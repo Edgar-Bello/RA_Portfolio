@@ -38,6 +38,12 @@ const ProjectsSection = () => {
           name="BASICS"
           isSelected={tag === "BASICS"}
         />
+
+        <ProjectTag
+          onClick={handleTagChange}
+          name="Highligths"
+          isSelected={tag === "Highligths"}
+        />
       </div>
 
       {/* CONTENT DISPLAY */}
@@ -103,6 +109,21 @@ const ProjectsSection = () => {
               <img
                 src="/images/BASICS2.png"
                 alt="basics-2"
+                className="w-1/2 h-85 object-cover rounded-lg"
+              />
+            </div>
+          )}
+
+          {tag === "Highligths" && (
+            <div className="flex gap-6 justify-center">
+              <img
+                src="/images/Highli.png"
+                alt="highlights-1"
+                className="w-1/2 h-85 object-cover rounded-lg"
+              />
+              <img
+                src="/images/Highlights2.png"
+                alt="highlights-2"
                 className="w-1/2 h-85 object-cover rounded-lg"
               />
             </div>

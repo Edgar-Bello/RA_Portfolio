@@ -49,19 +49,42 @@ const HeroSection = () => {
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
           &ldquo;Fear has killed more dreams than Failure.&ldquo;
           </p>
-          <div>
-          <Link
-            href="https://photos.google.com/album/AF1QipPbPrjaF1Y5m_ro7vgZydvdlroyqSEA8Edrye-t"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-800 boder border-white mt-3 text-white"
-          >
-            <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
-              Memories
-            </span>
-          </Link>
-           
+          <div className="flex gap-3 mt-3 flex-wrap">
+            <Link
+              href="https://photos.google.com/album/AF1QipPbPrjaF1Y5m_ro7vgZydvdlroyqSEA8Edrye-t"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-800 border border-white text-white"
+            >
+              <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
+                Memories
+              </span>
+            </Link>
+
+            <Link
+              href="https://github.com/Edgar-Bello/RA_Portfolio"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-red-500 via-purple-500 to-pink-500 hover:bg-slate-800 border border-white text-white"
+            >
+              <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
+                Code
+              </span>
+            </Link>
+
+            <Link
+              href="/resumes/Edgar_Bello_RA_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              download="Edgar_Bello_RA_Resume.pdf"
+              className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-slate-800 border border-white text-white"
+            >
+              <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
+                Resume
+              </span>
+            </Link>
           </div>
+
         </motion.div>
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
