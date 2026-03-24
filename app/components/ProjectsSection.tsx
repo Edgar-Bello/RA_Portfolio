@@ -41,8 +41,8 @@ const ProjectsSection = () => {
 
         <ProjectTag
           onClick={handleTagChange}
-          name="Highligths"
-          isSelected={tag === "Highligths"}
+          name="Highlights"
+          isSelected={tag === "Highlights"}
         />
       </div>
 
@@ -133,5 +133,6 @@ const ProjectsSection = () => {
     </section>
   );
 };
+
 
 export default ProjectsSection;
