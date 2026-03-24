@@ -1,10 +1,10 @@
 "use client";
 import React, { useState } from "react";
-import GithubIcon from "/public/github-icon.svg";
-import LinkedinIcon from "/public/linkedin-icon.svg";
+//import GithubIcon from "/public/github-icon.svg";
+//import LinkedinIcon from "/public/linkedin-icon.svg";
 import Link from "next/link";
 import Image from "next/image";
-import { Handshake, Instagram } from "lucide-react";
+import { Handshake, Instagram, Linkedin } from "lucide-react";
 
 const Contact = () => {
 
@@ -30,7 +30,7 @@ const Contact = () => {
           <Handshake className="text-white w-11 h-11 hover:text-gray-400" />
         </Link>
           <Link href="https://www.linkedin.com/in/edgar-bello-80145b325/">
-            <Image src={LinkedinIcon} alt="Linkedin Icon" />
+            <Linkedin className="text-white w-11 h-11 hover:scale-110 transition-transform" />
           </Link>
 
           <Link href="https://www.instagram.com/cowbots.robotics/">

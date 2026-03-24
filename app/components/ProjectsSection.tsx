@@ -114,10 +114,10 @@ const ProjectsSection = () => {
             </div>
           )}
 
-          {tag === "Highligths" && (
+          {tag === "Highlights" && (
             <div className="flex gap-6 justify-center">
               <img
-                src="/images/Highli.png"
+                src="/images/Highlights1.png"
                 alt="highlights-1"
                 className="w-1/2 h-85 object-cover rounded-lg"
               />
